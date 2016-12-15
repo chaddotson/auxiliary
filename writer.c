@@ -28,12 +28,15 @@ int main(int argc, char *argv[]) {
     test[0].nested[0].b = 2;
     test[0].nested[0].c = 3.3f;
 
-    test[1].number = 1;
-    test[1].nested = (nested_t *)calloc(1, sizeof(nested_t));
+    test[1].number = 2;
+    test[1].nested = (nested_t *)calloc(2, sizeof(nested_t));
     test[1].nested[0].a = 2;
     test[1].nested[0].b = 3;
     test[1].nested[0].c = 4.4f;
 
+    test[1].nested[1].a = 3;
+    test[1].nested[1].b = 4;
+    test[1].nested[1].c = 5.4f;
 
 
     FILE *fp = fopen("./test.bin", "wb");
